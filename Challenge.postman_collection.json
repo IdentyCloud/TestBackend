@@ -1,0 +1,347 @@
+{
+	"info": {
+		"_postman_id": "8dad01d6-b16e-483c-bb7e-e6ac94e5561b",
+		"name": "Challenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "ELISA",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "42672903",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:4000/access/create-user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"access",
+						"create-user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Authentication",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "ENUNEZ",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "42672903",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:4000/access/authentication",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"access",
+						"authentication"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Director",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGFmOTdhNjhmM2Q2MjQ2Nzg1OTRmNzQiLCJpYXQiOjE2MjIxMjI5NzcsImV4cCI6MTYyMjIwOTM3N30.Pi2c0SKeqUhikqhUA6AkCuZR7MVoecYWGNHXc6SODH0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "firstname",
+							"value": "Daniel",
+							"type": "text"
+						},
+						{
+							"key": "lastname",
+							"value": "Maquina",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "53",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:4000/director/create-director",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"director",
+						"create-director"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Actor",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGFmOTdhNjhmM2Q2MjQ2Nzg1OTRmNzQiLCJpYXQiOjE2MjIxMjMxNjIsImV4cCI6MTYyMjIwOTU2Mn0.VJ3WF8ieGmAf3hEThjnVOGhAp1HfLgRcXcStam_61vA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "firstname",
+							"value": "Elisa",
+							"type": "text"
+						},
+						{
+							"key": "lastname",
+							"value": "Rubiolo",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "26",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:4000/actor/create-actor",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"actor",
+						"create-actor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Movie",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGFmOTdhNjhmM2Q2MjQ2Nzg1OTRmNzQiLCJpYXQiOjE2MjIxMjI5NzcsImV4cCI6MTYyMjIwOTM3N30.Pi2c0SKeqUhikqhUA6AkCuZR7MVoecYWGNHXc6SODH0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "La Cueva 2",
+							"type": "text"
+						},
+						{
+							"key": "director",
+							"value": "60afa6b4007cfb1e40f868ce",
+							"type": "text"
+						},
+						{
+							"key": "actor",
+							"value": "60afa2dc7f203c407073dde5",
+							"type": "text"
+						},
+						{
+							"key": "actor",
+							"value": "60afa3253635f823d8320974",
+							"type": "text",
+							"disabled": true
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/movie/create-movie",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"movie",
+						"create-movie"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Show",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGFmOTdhNjhmM2Q2MjQ2Nzg1OTRmNzQiLCJpYXQiOjE2MjIxMjI5NzcsImV4cCI6MTYyMjIwOTM3N30.Pi2c0SKeqUhikqhUA6AkCuZR7MVoecYWGNHXc6SODH0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Los Simpsons\",\r\n    \"season\": {\r\n        \"name\": \"Temporada 1\",\r\n        \"episode\": [\r\n            {\r\n                \"number\": 1,\r\n                \"name\": \"Dia de la Independencia\"\r\n            },\r\n            {\r\n                \"number\": 2,\r\n                \"name\": \"Homero deja la cerveza\"\r\n            }\r\n        ]\r\n    },\r\n    \"director\": \"60afa6b4007cfb1e40f868ce\",\r\n    \"actor\": [\r\n        \"60afa2dc7f203c407073dde5\",\r\n        \"60afa3253635f823d8320974\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/show/create-show",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"show",
+						"create-show"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Filter Movie",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGFmOTdhNjhmM2Q2MjQ2Nzg1OTRmNzQiLCJpYXQiOjE2MjIxMjI5NzcsImV4cCI6MTYyMjIwOTM3N30.Pi2c0SKeqUhikqhUA6AkCuZR7MVoecYWGNHXc6SODH0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/movie/filter/?name=La Ira",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"movie",
+						"filter",
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "La Ira"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sort Movie",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGFmOTdhNjhmM2Q2MjQ2Nzg1OTRmNzQiLCJpYXQiOjE2MjIxMjI5NzcsImV4cCI6MTYyMjIwOTM3N30.Pi2c0SKeqUhikqhUA6AkCuZR7MVoecYWGNHXc6SODH0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/movie/sort/?order=ascendant",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"movie",
+						"sort",
+						""
+					],
+					"query": [
+						{
+							"key": "order",
+							"value": "ascendant"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

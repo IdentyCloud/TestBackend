@@ -1,0 +1,1 @@
+"use strict";var _require=require("mongoose"),Schema=_require.Schema,model=_require.model,UsersSchema=new Schema({username:{type:String,required:!0},password:{type:String,required:!0}});module.exports=model("Users",UsersSchema);

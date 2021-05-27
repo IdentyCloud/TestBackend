@@ -1,0 +1,1 @@
+"use strict";var _require=require("mongoose"),Schema=_require.Schema,model=_require.model,DirectorSchema=new Schema({firstname:{type:String,required:!0},lastname:{type:String,required:!0},age:{type:String}});module.exports=model("Director",DirectorSchema);
