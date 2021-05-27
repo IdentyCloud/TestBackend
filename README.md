@@ -6,8 +6,8 @@ To run the program you just have to run the following command: **npm start**
 
 In the project directory, you can run:
 
-**npm run dev** : run in development mode
-**npm run build** : create the build folder
+**npm run dev** : run in development mode \
+**npm run build** : create the build folder \
 **npm run clear** : delete the build folder
 
 ## End Point
